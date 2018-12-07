@@ -9,7 +9,7 @@
     <string name="priority_3">3</string>
 
     <!-- Strings for AddTaskActivity -->
-    <!-- This etaskEntrytask has a unicode character for "..." = "&#8230;" -->
+    <!-- "..." = "&#8230;" -->
     <string name="edit_task_description">Describe your taskEntry&#8230;</string>
     <string name="priority_string">Priority</string>
 
@@ -19,5 +19,36 @@
 
     <string name="add_button">Add</string>
     <string name="update_button">Update</string>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                   String for Settings                       -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- Settings menu item -->
+    <string name="main_settings_menu_item">Settings</string>
+
+    <!-- Settings activity title -->
+    <string name="main_settings_title">AlgoVisio Settings</string>
+
+
+    <!-- Strings for editing Some Value -->
+    <string name="settings_some_value_label">Some value : </string>
+    <string name="settings_some_value_key" translatable="false">some_value_key</string>
+    <string name="settings_some_value_default" translatable="false">0</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_NAME_value</string>
+
+    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_NAME_label">Name</string>
+    <string name="settings_order_by_NAME_value" translatable="false">name</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_DATE_label">Date</string>
+    <string name="settings_order_by_DATE_value" translatable="false">date</string>
+
 
 </resources>
