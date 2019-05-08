@@ -12,6 +12,11 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+/**
+ * -------------------------------------------------------------------------------------------------
+ * App settings activity
+ * -------------------------------------------------------------------------------------------------
+ */
 public class MainSettingsActivity extends AppCompatActivity {
 
 
@@ -50,8 +55,10 @@ public class MainSettingsActivity extends AppCompatActivity {
 
 
         /**
+         * -----------------------------------------------------------------------------------------
          * Bind prefs text shown below label on prefs changes
          * @param preference
+         * -----------------------------------------------------------------------------------------
          */
         private void bindPreferenceSummaryToValue(Preference preference) {
             preference.setOnPreferenceChangeListener(this);  // bind
@@ -90,9 +97,11 @@ public class MainSettingsActivity extends AppCompatActivity {
 
 
     /**
-     * Support for èressingback/up buttonin action bar and on screen
+     * -----------------------------------------------------------------------------------------
+     * Support for pressing back/up button in actionbar and on screen
      * @param item
      * @return
+     * -----------------------------------------------------------------------------------------
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

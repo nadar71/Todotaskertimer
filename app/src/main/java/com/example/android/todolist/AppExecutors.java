@@ -9,7 +9,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
+ * -------------------------------------------------------------------------------------------------
  * Global executor for all the app request; all tasks are grouped here.
+ * -------------------------------------------------------------------------------------------------
  */
 public class AppExecutors {
     // singleton instantion

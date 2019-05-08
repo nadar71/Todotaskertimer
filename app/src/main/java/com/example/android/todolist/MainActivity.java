@@ -48,14 +48,12 @@ import static android.support.v7.widget.DividerItemDecoration.VERTICAL;
  */
 public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemClickListener {
 
-    // Constant for logging
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    // Member variables for the adapter and RecyclerView
+    // RecyclerView stuff
     private RecyclerView mRecyclerView;
     private TaskAdapter  mAdapter;
 
-    // Db reference
     private AppDatabase mDb;
 
     /**
@@ -130,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
 
         // Using ViewModel/LiveData to show/keep update list
         // ---------------------------------------------------
-        // active LiveData and register thus activity as observer
+        // active LiveData and register this activity as observer
         setupViewModel();
     }
 
@@ -161,13 +159,13 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         // ---------------------------------------------------
         // Using ViewModel/LiveData to show/keep update list
         // ---------------------------------------------------
-        // keep list data updated with LiveData and ViewModel which encapsulate it
+        // keep data list updated with LiveData/ViewModel
         MainViewModel viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
-        // retrieve all the data from viewModel for the RecycleView
+        // retrieve all the data from viewModel for the RecyclerView
         LiveData<List<TaskEntry>> tasks = viewModel.getTasks();
 
-        // set data in the observer and update the RecycleView through adapter
+        // get data from the observer, update RecyclerView
         tasks.observe(this, new Observer<List<TaskEntry>>() {
             @Override
             public void onChanged(@Nullable List<TaskEntry> taskEntries) {

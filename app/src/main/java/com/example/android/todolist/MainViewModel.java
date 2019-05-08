@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * -------------------------------------------------------------------------------------------------
- * ViewModel Class for retrieving all the tasks
+ * ViewModel Class for retrieving all tasks
  * -------------------------------------------------------------------------------------------------
  */
 public class MainViewModel extends AndroidViewModel {

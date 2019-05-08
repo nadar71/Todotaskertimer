@@ -10,7 +10,7 @@ import android.util.Log;
 
  /**
   * -----------------------------------------------------------------------------
-  * AppDatabase db class with Room
+  * AppDatabase db
   * -----------------------------------------------------------------------------
   */
  @Database(entities = {TaskEntry.class}, version = 1, exportSchema = false)
