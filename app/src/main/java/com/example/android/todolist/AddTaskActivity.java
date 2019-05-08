@@ -76,14 +76,17 @@ public class AddTaskActivity extends AppCompatActivity {
             // if id is the default one insert the new to be updated
             if (mTaskId == DEFAULT_TASK_ID) {
                 mTaskId = intent.getIntExtra(EXTRA_TASK_ID, DEFAULT_TASK_ID);
-                // show current data of the task to be updated
-                // -------------------------------
-                // keep ui updated with LiveData
-                // -------------------------------
+                // show current data of the task to be updated using LiveData/ViewModel
+
+                // instantiate AddTaskViewModelFactory object to inject mTaskId to ViewModel
                 AddTaskViewModelFactory factory = new AddTaskViewModelFactory(mDb,mTaskId);
+
                 final AddTaskViewModel viewModel = ViewModelProviders.of(this, factory).get(AddTaskViewModel.class);
+
                 // populate the UI in case of upgrade with the data of the mTaksId task
                 final LiveData<TaskEntry> task = viewModel.getTask();
+
+                // keep UI updated through observer
                 task.observe(this, new Observer<TaskEntry>() {
                     @Override
                     public void onChanged(@Nullable TaskEntry taskEntry) {

@@ -7,6 +7,17 @@ import android.support.annotation.NonNull;
 
 import com.example.android.todolist.database.AppDatabase;
 
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * ViewModel Factory for AddTaskViewModel object : used to inject into viewModel the mTaskId
+ * through create method
+ * check :
+ * https://github.com/googlesamples/android-architecture-components/blob/master/BasicSample/app/src/main/java/com/example/android/persistence/viewmodel/ProductViewModel.java
+ * https://github.com/googlesamples/android-architecture-components/blob/master/BasicSample/app/src/main/java/com/example/android/persistence/ui/ProductFragment.java
+ * for better explanation
+ * -------------------------------------------------------------------------------------------------
+ */
 public class AddTaskViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
     private final AppDatabase db;

@@ -11,6 +11,12 @@ import com.example.android.todolist.database.TaskEntry;
 
 import java.util.List;
 
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * ViewModel Class for retrieving all the tasks
+ * -------------------------------------------------------------------------------------------------
+ */
 public class MainViewModel extends AndroidViewModel {
 
     private final static String TAG = MainViewModel.class.getSimpleName();

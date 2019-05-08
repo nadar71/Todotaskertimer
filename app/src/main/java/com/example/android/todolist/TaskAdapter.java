@@ -138,7 +138,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewRowHol
 
     /**
     * ----------------------------------------------------------------------------------
-    * ViewModel/LiveData
     * At data changes, updates taskEntries list in RecycleView.
     * Notifies adapter to use the new values
     * ----------------------------------------------------------------------------------
